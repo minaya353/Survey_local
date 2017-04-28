@@ -3,6 +3,7 @@
 <%@ Register TagPrefix="uc" TagName="Rating" Src="~/Controls/RatingControl.ascx" %>
 
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
+    <br />
     <table>
         <tr>
             <td colspan="2">

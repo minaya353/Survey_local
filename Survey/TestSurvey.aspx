@@ -3,7 +3,7 @@
 
 <asp:Content ContentPlaceHolderID="MainContent" Runat="Server">
     <asp:ValidationSummary ValidationGroup="UpdateGroup" runat="server" />
-
+    <br />
     <!-- Name -->
     <asp:Label AssociatedControlID="txtName" Text="Name:" runat="server" /><br />
     <asp:TextBox ID="txtName" Width="500px" runat="server" />

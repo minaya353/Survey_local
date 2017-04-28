@@ -76,7 +76,6 @@ namespace Survey.Controls
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-            Page.ClientScript.RegisterClientScriptInclude("jquery.rating", ResolveUrl("~/Scripts/jquery.rating.pack.js"));
         }
     }
 }

@@ -1,9 +1,11 @@
 <%@ Page Language="C#" MasterPageFile="~/Site.master" Inherits="TestSurveyQuestionsPage" Codebehind="TestSurveyQuestions.aspx.cs" %>
 
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
+    <br />
     <a id="A1" href="~/Admin/EditTestSurveyQuestion.aspx" runat="server">
-        <img id="imgAddNew" src="~/Images/button_add_new.png" alt="Add New" runat="server" />
+        + Add New Survey Question
     </a>
+    <br />
     <br />
     <asp:ValidationSummary ID="validSummary" ValidationGroup="UpdateGroup" runat="server" />
     <asp:GridView ID="gv"
