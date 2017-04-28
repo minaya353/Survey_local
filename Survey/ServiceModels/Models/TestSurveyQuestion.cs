@@ -5,7 +5,7 @@ using System.Linq;
 
 #endregion
 
-namespace EP.ServiceModels
+namespace Survey.ServiceModels
 {
     /// <summary>
     /// This class is used as part of SMRT web server responses to model Survey Question values
@@ -24,7 +24,7 @@ namespace EP.ServiceModels
         {
         }
 
-        public TestSurveyQuestion(EP.BusinessLogic.TestSurveyQuestion sq)
+        public TestSurveyQuestion(Survey.BusinessLogic.TestSurveyQuestion sq)
         {
             SurveyQuestionID = sq.SurveyQuestionID;
             Title = sq.Title;

@@ -1,10 +1,4 @@
-﻿#region
-
-using SMRTLib.Models;
-
-#endregion
-
-namespace EP.ServiceModels.Results
+﻿namespace Survey.ServiceModels.Results
 {
     /// <summary>
     /// This class is a SMRT web-server response base class from which all other web server responses

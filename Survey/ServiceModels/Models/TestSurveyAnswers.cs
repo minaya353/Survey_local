@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 #endregion
 
-namespace EP.ServiceModels
+namespace Survey.ServiceModels
 {
     /// <summary>
     /// This class is used as part of SMRT web server responses to model Survey Answer values
