@@ -1,0 +1,9 @@
+C:\Users\tl_bl\Desktop\Projects\Survey_local\SurveyDatabase\bin\Debug\SurveyDatabase.dacpac
+C:\Users\tl_bl\Desktop\Projects\Survey_local\SurveyDatabase\bin\Debug\SurveyDatabase.dll
+C:\Users\tl_bl\Desktop\Projects\Survey_local\SurveyDatabase\bin\Debug\SurveyDatabase.pdb
+C:\Users\tl_bl\Desktop\Projects\Survey_local\SurveyDatabase\obj\Debug\Model.xml
+C:\Users\tl_bl\Desktop\Projects\Survey_local\SurveyDatabase\obj\Debug\refactor.xml
+C:\Users\tl_bl\Desktop\Projects\Survey_local\SurveyDatabase\obj\Debug\postdeploy.sql
+C:\Users\tl_bl\Desktop\Projects\Survey_local\SurveyDatabase\obj\Debug\predeploy.sql
+C:\Users\tl_bl\Desktop\Projects\Survey_local\SurveyDatabase\obj\Debug\SurveyDatabase.dll
+C:\Users\tl_bl\Desktop\Projects\Survey_local\SurveyDatabase\obj\Debug\SurveyDatabase.pdb
