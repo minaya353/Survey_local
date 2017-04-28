@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DAL">
+  <DataContextMoniker Name="/DALDataContext" />
+  <nestedChildShapes>
+    <classShape Id="cb9a971e-6cab-4831-a103-9ed27d07b011" absoluteBounds="1.625, 0.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DALDataContext/TestSurveyQuestion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0832f301-19d3-45f9-9c3c-ce3d26699343" absoluteBounds="1.6400000000000001, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b8ce649c-0cc1-4c86-8c81-aa9e14e82efc" absoluteBounds="3.875, 0.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DALDataContext/TestSurveyAnswer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7afa16eb-32f5-45f3-9c74-6f0de11bad23" absoluteBounds="3.8899999999999997, 1.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="36bc361d-a709-4795-9b26-88bea518e5d0" absoluteBounds="6.375, 0.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DALDataContext/TestSurveyScore" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e0a2e5a8-5c2e-4a60-bb09-ab101ff39ca9" absoluteBounds="6.3900000000000006, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.875 : 1.66429768880208); (6.375 : 1.66429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALDataContext/TestSurveyAnswer/TestSurveyAnswer_TestSurveyScore" />
+      <nodes>
+        <classShapeMoniker Id="b8ce649c-0cc1-4c86-8c81-aa9e14e82efc" />
+        <classShapeMoniker Id="36bc361d-a709-4795-9b26-88bea518e5d0" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

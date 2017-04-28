@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Survey" Class="DALDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-7HUR59J\SQL;Initial Catalog=Survey;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="SurveyConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TestSurveyQuestions" Member="TestSurveyQuestions">
+    <Type Name="TestSurveyQuestion">
+      <Column Name="SurveyQuestionID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(512) NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Titles" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="IsRequired" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TestSurveyAnswers" Member="TestSurveyAnswers">
+    <Type Name="TestSurveyAnswer">
+      <Column Name="SurveyAnswerID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Age" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Gender" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Country" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(512)" CanBeNull="true" />
+      <Association Name="TestSurveyAnswer_TestSurveyScore" Member="TestSurveyScores" ThisKey="SurveyAnswerID" OtherKey="SurveyAnswerID" Type="TestSurveyScore" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TestSurveyScores" Member="TestSurveyScores">
+    <Type Name="TestSurveyScore">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SurveyAnswerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SurveyQuestionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Rating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="TestSurveyAnswer_TestSurveyScore" Member="TestSurveyAnswer" ThisKey="SurveyAnswerID" OtherKey="SurveyAnswerID" Type="TestSurveyAnswer" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
